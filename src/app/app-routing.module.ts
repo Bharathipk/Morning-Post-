@@ -9,7 +9,7 @@ import { NewsComponent } from './components/news/news.component';
 
 
 const routes: Routes = [
-  { path:'home', component:HomeComponent },
+  { path:'', component:HomeComponent },
   { path:'home', component:HomeComponent },
 
   { path:'world', component:WorldComponent },
