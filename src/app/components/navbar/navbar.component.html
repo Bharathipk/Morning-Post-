@@ -1,0 +1,50 @@
+
+
+
+<div routerLink=""></div>
+
+<div class="container">
+  <header class="blog-header py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 pt-1">
+        <div style=" padding: 1px; padding-left: 0px;"><h4>{{day | date: 'MMM d , y' }}</h4></div>
+
+        <div style=" padding: 1px; padding-left: 0px;"><h4>{{day | date: 'EEEE' }}</h4></div>
+
+      </div>
+      <div class="col-4 text-center">
+
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+        <b>  <span class="fs-1" style="color:orange;">Morning</span>       <span class="fs-1" style="color: black;">Post</span>
+          <span class="fs-1" style="color: orange">.</span>
+        </b>
+
+        </a>
+      </div>
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <a class="text-muted" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-3"><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></svg>
+        </a>
+        <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a> &nbsp; &nbsp;
+        <a class="btn btn-sm btn-outline-secondary" href="#">Subscribe</a>
+
+      </div>
+    </div>
+  </header>
+<div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex justify-content-between">
+      <a class="p-2 text-warning" id="nav_home" (click)="iconClicked($event)" routerLink="home"><h3>Home</h3></a>
+      <a class="p-2" id="nav_us" (click)="iconClicked($event)" routerLink="us"><h3>U.S</h3></a>
+      <a class="p-2" id="nav_world" (click)="iconClicked($event)" routerLink="world"><h3>World</h3></a>
+      <a class="p-2" id="nav_arts" (click)="iconClicked($event)" routerLink="arts"><h3>Arts</h3></a>
+      <a class="p-2" id="nav_science" (click)="iconClicked($event)" routerLink="science"><h3>Science</h3></a>
+      <a class="p-2" id="nav_archives" (click)="iconClicked($event)" routerLink="news"><h3>Archives</h3></a>
+
+    </nav>
+  </div>
+
+  <hr size="15"style="background-color:#ffa500;">
+
+
+

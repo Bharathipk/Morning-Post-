@@ -1,0 +1,19 @@
+
+
+
+
+
+
+<div class="container">
+  <div class="row">
+
+      <div class="col-lg-3" *ngFor="let x of home" style="padding: 30px;">
+         <img src="{{x.multimedia[0]?.url}}" style="width:100%">
+        <b>{{x.title}}</b>
+        <br>
+        <div> {{x.abstract}} </div>
+        <a href="{{x.url}}">Read More</a>
+
+      </div>
+   </div>
+</div>
